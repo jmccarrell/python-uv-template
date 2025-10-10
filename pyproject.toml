@@ -1,0 +1,18 @@
+[project]
+name = "hello-svc"
+version = "0"
+requires-python = "==3.14.*"
+dependencies = [
+  "fastapi", "granian", "stamina"
+]
+
+[dependency-groups]
+dev = ["fastapi[standard]",  "pytest", "coverage"]
+
+[build-system]
+requires = ["uv_build>=0.8.0"]
+build-backend = "uv_build"
+
+# specify no coverage for code that is to be executed only once
+# [tool.coverage.report]
+# omit = ["src/**/entrypoint.py"]
