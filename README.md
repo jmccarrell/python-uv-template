@@ -1,11 +1,17 @@
-# Minimal python uv based project example
+# uv based python project template
 
-To run:
-- `uv run pytest`
-- or
-- `uv run fastapi dev src/hello_svc/asgi.py`
+Derived from Hyneks video and [hello-svc repo](https://github.com/hynek/hello-svc-part-2/tree/main)
 
-For test coverage from pytest:
-- `uv run coverage run -m pytest`
-- followed by
-- `uv run coverage report`
+## Depends on
+
+The only truly required dependency is `uv`.
+Optional, but almost always desireable:
+
+- just
+- direnv
+
+## Show the recipes available
+
+```text
+just
+```
